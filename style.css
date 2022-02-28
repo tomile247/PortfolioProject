@@ -1,0 +1,87 @@
+* {
+    color: black;
+    font-family: 'Raleway', Sans-Serif;
+    /*font-family: 'Open Sans', Sans-Serif;*/
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+}
+
+.logo {
+    grid-column: 1 / span 9;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+nav {
+    grid-column: 10 / span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.logo, nav {
+    background-color: wheat;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+nav li {
+    list-style-type: none;
+}
+nav li a {
+    text-decoration: none;
+}
+
+.section {
+    grid-column: 1 / span 12;
+    height: 50vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#home p {
+    font-family: 'Open Sans', Sans-Serif;
+    font-size: 3rem;
+    color:wheat;
+    border: 3px solid wheat;
+    border-radius: 5px;
+    padding: 20px;
+}
+#about {
+    background-color: blanchedalmond;
+    display: grid;
+    grid-column: 1 / span 6;
+}
+#profile {
+    grid-column: 7 / span 6;
+    background-color: gray;
+}
+#portfolio {
+    background-color: burlywood;
+}
+footer {
+    max-height: 200px;
+    background-color: bisque;
+}
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
