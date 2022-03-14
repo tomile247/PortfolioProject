@@ -10,14 +10,22 @@ body {
     grid-template-columns: repeat(12, 1fr); 
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: tomato;
+}
+
 .logo {
-    grid-column: 1 / span 9;
+    grid-column: 1 / span 6;
     margin: 0;
     display: flex;
     align-items: center;
 }
 nav {
-    grid-column: 10 / span 3;
+    grid-column: 7 / span 6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,6 +82,9 @@ nav li a {
     grid-column: 7 / span 6;
     background-color: gray;
 }
+#contact {
+    background-color: tan;
+}
 #portfolio {
     background-color: burlywood;
 }
@@ -84,4 +95,30 @@ footer {
 .social-media-icons {
     display: flex;
     justify-content: center;
+}
+.whats-app-icon {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+}
+@media screen and (max-width: 520px) and (orientation: portrait){
+    .logo {
+        grid-column: 1 / span 12;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        grid-column: 1 / span 12;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .logo, nav {
+        background-color: wheat;
+        position: sticky;
+        top: 0;
+        padding: 10px;
+    }
 }
