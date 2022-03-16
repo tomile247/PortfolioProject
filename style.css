@@ -1,5 +1,5 @@
 * {
-    color: black;
+    color: whitesmoke;
     font-family: 'Raleway', Sans-Serif;
     /*font-family: 'Open Sans', Sans-Serif;*/
     margin: 0;
@@ -32,10 +32,11 @@ nav {
     
 }
 .logo, nav {
-    background-color: wheat;
+    background-color: #1A1A2E;
     position: sticky;
     top: 0;
     padding: 10px;
+    color: whitesmoke;
 }
 
 nav ul {
@@ -49,6 +50,7 @@ nav li {
 }
 nav li a {
     text-decoration: none;
+    color: whitesmoke;
 }
 
 .section {
@@ -63,7 +65,7 @@ nav li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #16213E;
 }
 #home p {
     font-family: 'Open Sans', Sans-Serif;
@@ -74,23 +76,24 @@ nav li a {
     padding: 20px;
 }
 #about {
-    background-color: blanchedalmond;
+    background-color: #0F3460;
     display: grid;
     grid-column: 1 / span 6;
 }
 #profile {
     grid-column: 7 / span 6;
-    background-color: gray;
+    background-color: #000;
+    color: whitesmoke;
 }
 #contact {
-    background-color: tan;
+    background-color: #E94560;
 }
 #portfolio {
-    background-color: burlywood;
+    background-color: #16213E;
 }
 footer {
     max-height: 200px;
-    background-color: bisque;
+    background-color: #0F3460;
 }
 .social-media-icons {
     display: flex;
@@ -102,6 +105,9 @@ footer {
     right: 5vw;
 }
 @media screen and (max-width: 520px) and (orientation: portrait){
+    body {
+        width: 100vw;
+    }
     .logo {
         grid-column: 1 / span 12;
         margin: 0;
@@ -116,9 +122,11 @@ footer {
         
     }
     .logo, nav {
-        background-color: wheat;
         position: sticky;
         top: 0;
         padding: 10px;
+    }
+    img {
+        display: none;
     }
 }
