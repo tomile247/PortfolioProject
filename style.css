@@ -119,6 +119,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        height: 60px;
         
     }
     .logo, nav {
